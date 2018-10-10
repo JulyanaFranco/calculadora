@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="350.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.HistoricoController">
+   <children>
+      <TableView fx:id="tbCalculadora" layoutX="54.0" layoutY="77.0" prefHeight="200.0" prefWidth="442.0">
+        <columns>
+          <TableColumn prefWidth="113.0" text="Primeiro Número">
+              <cellValueFactory>
+                  <PropertyValueFactory property="primeiroValor" />
+              </cellValueFactory>
+            </TableColumn>
+          <TableColumn minWidth="3.0" prefWidth="118.0" text="Segundo Número">
+              <cellValueFactory>
+                  <PropertyValueFactory property="segundoValor" />
+              </cellValueFactory>
+              </TableColumn>
+            <TableColumn prefWidth="90.0" text="Operador">
+                <cellValueFactory>
+                  <PropertyValueFactory property="operador" />
+              </cellValueFactory>
+              </TableColumn>
+            <TableColumn prefWidth="120.0" text="Resultado">
+                <cellValueFactory>
+                  <PropertyValueFactory property="resultado" />
+              </cellValueFactory>
+              </TableColumn>
+        </columns>
+      </TableView>
+      <Button layoutX="250.0" layoutY="303.0" mnemonicParsing="false" onAction="#Fechar" text="Fechar" />
+      <Button layoutX="14.0" layoutY="34.0" mnemonicParsing="false" onAction="#calculadora" prefHeight="33.0" prefWidth="135.0" text="Voltar a Calculadora" />
+   </children>
+</AnchorPane>

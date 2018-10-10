@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="218.0" prefWidth="429.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.CalculadoraController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="205.0" prefWidth="422.0">
+         <children>
+            <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+            <TextField fx:id="txtNumero1" layoutX="30.0" layoutY="51.0" />
+            <TextField fx:id="txtNumero2" layoutX="30.0" layoutY="108.0" />
+            <TextField fx:id="txtResultado" disable="true" layoutX="30.0" layoutY="160.0" prefHeight="25.0" prefWidth="149.0" />
+            <Label fx:id="lblNumero1" layoutX="23.0" layoutY="34.0" text="Número 1:" />
+            <Label fx:id="lblNumero2" layoutX="23.0" layoutY="80.0" text="Número 2:" />
+            <Label fx:id="lblResultado" layoutX="24.0" layoutY="139.0" text="Resultado:" />
+            <Button fx:id="btnSoma" layoutX="223.0" layoutY="51.0" mnemonicParsing="false" onAction="#soma" text="Soma" />
+            <Button fx:id="btnDivisão" layoutX="300.0" layoutY="51.0" mnemonicParsing="false" onAction="#divisao" text="Divisão" />
+            <Button fx:id="btnMultiplicacao" layoutX="300.0" layoutY="85.0" mnemonicParsing="false" onAction="#multiplicacao" text="Multiplicação" />
+            <Button fx:id="btnSubtracao" layoutX="223.0" layoutY="85.0" mnemonicParsing="false" onAction="#subtracao" text="Subtação" />
+            <Button fx:id="limpar" layoutX="211.0" layoutY="160.0" mnemonicParsing="false" onAction="#limpar" text="Limpar" />
+            <Button fx:id="fechar" layoutX="300.0" layoutY="160.0" mnemonicParsing="false" onAction="#fechar" text="Fechar" />
+            <Button layoutX="232.0" layoutY="127.0" mnemonicParsing="false" onAction="#historico" text="Histórico" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
