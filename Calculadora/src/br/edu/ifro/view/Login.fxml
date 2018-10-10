@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="219.0" prefWidth="422.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.LoginController">
+   <children>
+      <JFXButton layoutX="258.0" layoutY="54.0" onAction="#Salvar" prefHeight="32.0" prefWidth="111.0" style="-fx-background-color: grey;" text="Efetuar Login      " textAlignment="JUSTIFY" />
+      <Label layoutX="20.0" layoutY="61.0" text="Usuário:">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Label>
+      <Label layoutX="20.0" layoutY="116.0" text="Senha:" />
+      <JFXCheckBox fx:id="cbMostrarSenha" checkedColor="#171717" layoutX="20.0" layoutY="159.0" onAction="#mostrarSenha" prefHeight="18.0" prefWidth="111.0" text="Mostrar Senha" unCheckedColor="#1b1b1b" />
+      <JFXTextField fx:id="Usuario" focusColor="#2a2a2c" layoutX="69.0" layoutY="58.0" prefHeight="25.0" prefWidth="141.0" />
+      <JFXButton layoutX="258.0" layoutY="109.0" onAction="#Cancelar" prefHeight="32.0" prefWidth="85.0" style="-fx-background-color: grey;" text="Cancelar      " textAlignment="JUSTIFY" />
+      <JFXTextField fx:id="Senha2" layoutX="69.0" layoutY="104.0" onKeyPressed="#onEnter" />
+      <JFXPasswordField fx:id="Senha" focusColor="#131414" layoutX="66.0" layoutY="104.0" onKeyPressed="#onEnter" prefHeight="25.0" prefWidth="141.0" />
+      <JFXButton fx:id="btnCadastro" layoutX="258.0" layoutY="158.0" onAction="#abrirCadastroLogin" prefHeight="32.0" prefWidth="111.0" style="-fx-background-color: grey;" text="Cadastrar Login" />
+   </children>
+</AnchorPane>
